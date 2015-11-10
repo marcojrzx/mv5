@@ -27,7 +27,10 @@ var sText = document.getElementById("sText");
 var sI = document.getElementById("sI");
 
 var iT = document.getElementById("inovacionT");
+var iText = document.getElementById("inovacionText");
+var iI = document.getElementById("inovacionI");
 var satT = document.getElementById("satisfaccionT");
+var satText = document.getElementById("satisfaccionText");
 
 var appS = document.getElementById("appS");
 var carritoS = document.getElementById("carritoS");
@@ -45,7 +48,7 @@ var twitter = document.getElementById("twitter");
 
 
 
-var xx3 = TweenMax.staggerTo([appS, carritoS, diseS, codeS, servicioS, socialS, contacto, adan, chimp, face, link, twitter, sT, iT, satT], 0.1,
+var xx3 = TweenMax.staggerTo([appS, carritoS, diseS, codeS, servicioS, socialS, contacto, adan, chimp, face, link, twitter, sT, sText,sI,iT, satT,iText,iI,satText], 0.1,
            {scale:0, opacity:0.0}, 0.1);
 var x = new ScrollMagic.Scene({
               triggerElement: "#sec1", // point of execution
@@ -94,6 +97,24 @@ var xx4 = TweenMax.staggerTo([appS, carritoS, diseS, codeS, servicioS, socialS],
 
 var xxconta2 = TweenMax.staggerTo([twitter,link,face], 0.4,
                  {delay:0.7,scale:1, opacity:1}, 0.3);
+
+var somosA = new  TimelineMax()
+            .to(sT, 0.7, {delay:0.9, scale:1, opacity:1})
+            .to(sText, 0.7, {delay:0.1,scale:1, opacity:1})
+            .to(sI, 0.7, {delay:0.1,scale:1,opacity:1})
+            .to(iT, 0.7, {delay:1.9,scale:1,opacity:1})
+            .to(iText, 0.7, {delay:0.2,scale:1,opacity:1})
+            .to(iI, 0.7, {delay:0.3,scale:1,opacity:1});
+
+var somosAS = new ScrollMagic.Scene({
+      triggerElement: "#nosott", // point of execution
+      duration: 0 // pin the element for a total of 400px
+              })
+      .setTween(somosA)
+      .addTo(controller);
+
+
+/*sT, sText,sI,iT, satT,iText,iI,satText*/
 
   var xconta = new ScrollMagic.Scene({
             triggerElement: "#con", // point of execution
