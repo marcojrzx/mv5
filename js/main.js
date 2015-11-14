@@ -133,13 +133,13 @@ var somosAS = new ScrollMagic.Scene({
 
 
 cerrar.onclick = function(){
-  TweenMax.set("#titu", {delay:0.1, text:""})
-  TweenMax.set("#contenido", {delay:0.1, text:""})
-  TweenMax.set("#cerrar", {delay:0.1, text:""})
+  TweenMax.set("#titu", {delay:0.1, text:""});
+  TweenMax.set("#contenido", {delay:0.1, text:""});
+  TweenMax.set("#cerrar", {delay:0.1, text:""});
   if (numb==1) {
     TweenMax.staggerTo(["#carritoS","#diseS","#codeS","#servicioS","#socialS"], 0.2, { scale: 1}, 0.1);
     TweenMax.staggerTo("#appS", 0.9, { top:"6px"}, 0.1);
-     $("#servi").css("background", "white")
+     $("#servi").css("background", "white");
 
 
   }
@@ -159,21 +159,21 @@ cerrar.onclick = function(){
 
   }
   if (numb==4) {
-    TweenMax.staggerTo(["#appS","#carritoS","#diseS","#servicioS","#socialS"], 0.2, { scale: 1}, 0.1);
+    TweenMax.staggerTo(["#appS","#carritoS","#diseS","#servicioS","#socialS"], 0.2, { delay:1.3, scale: 1}, 0.1);
     TweenMax.staggerTo("#codeS", 0.9, { top:"2px"}, 0.1);
     TweenMax.staggerTo("#codeS", 0.9, { delay:1,  right:"-1px" }, 0.1);
 
 
   }
   if (numb==5) {
-    TweenMax.staggerTo(["#appS","#carritoS","#diseS","#codeS","#socialS"], 0.2, { scale: 1}, 0.1);
+    TweenMax.staggerTo(["#appS","#carritoS","#diseS","#codeS","#socialS"], 0.2, {delay:1.3, scale: 1}, 0.1);
     TweenMax.staggerTo("#servicioS", 0.9, { top:"-1px"}, 0.1);
     TweenMax.staggerTo("#servicioS", 0.9, { delay:1,  right:"-1px" }, 0.1);
 
 
   }
   if (numb==6) {
-    TweenMax.staggerTo(["#appS","#carritoS","#diseS","#codeS","#servicioS"], 0.2, { scale: 1}, 0.1);
+    TweenMax.staggerTo(["#appS","#carritoS","#diseS","#codeS","#servicioS"], 0.2, {delay:1.3, scale: 1}, 0.1);
     TweenMax.staggerTo("#socialS", 0.9, { top:"-3px"}, 0.1);
     TweenMax.staggerTo("#socialS", 0.9, { delay:1,  right:"-1px" }, 0.1);
 
